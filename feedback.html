@@ -7,15 +7,37 @@
 	</head> 
 	<body>
 		<div class="NavBlock">
-			<span class="NavItem">
-				<a href="index.html">ГЛАВНАЯ</a>
-			</span>
-			<span class="NavItem">
-				<a href="about.html">О НАС</a>
-			</span>
-			<span class="NavItem">
-				<a href="feedback.html">ОБРАТНАЯ СВЯЗЬ</a>
-			</span>
+			<a href="index.html">Главная</a>
+			<a href="about.html">О нас</a>
+			<a href="feedback.html">Обратная связь</a>
+		</div>
+		<div class="MainItem">
+			<h1>Header</h1>
+			<form method="post">
+				<table>
+					<tr><td><input type="text" placeholder="Ваше имя" required></td></tr>
+					<tr><td>
+						<select>
+							<option disabled selected>Тема</option>
+							<option value="Universe organization">Устройство вселенной</option>
+							<option value="Mind motive">Мотивы разума</option>
+							<option value="Unrepared evolution problems">Неустраненные проблемы эволюции</option>
+							<option value="Dinner cooking difficulties">Затруднения с готовкой ужина</option>
+							<option value="Other">Другое</option>
+						</select>
+					</td></tr>
+					<tr><td>
+						<span class="TableHeader">Срочность:</span>
+						<input title="Низкая" type="radio" name="urgency" value="can_wait">
+						<input title="Средняя" type="radio" name="urgency" value="average">
+						<input title="Высокая" type="radio" name="urgency" value="immediately">
+						<input title="Наивысочайшая" type="radio" name="urgency" value="most_immediatelest">
+					</td></tr>
+					<tr><td><span class="TableHeader">Дублировать на почту:</span><input type="checkbox" name="email"></td></tr>
+					<tr><td><textarea name="message" cols="83" rows="10" placeholder="Ваше сообщение" required></textarea></td></tr>
+					<tr><td><input class="button" type="submit" name="submit"><input type="reset"></td></tr>
+				</table>
+			</form>
 		</div>
 	</body>
 </html>

@@ -5,9 +5,14 @@ html, body {
     background-color: #F2F2F2;
 }
 .MainItem {
-	text-align: center;
+	text-align: left;
+	width: 600px;
+	margin: 0 auto;
 }
-.NewsBlock{
+.button {
+	margin: 0 10px;
+}
+.MainItem h1,h3 {
 	text-align: center;
 }
 p {
@@ -32,7 +37,11 @@ p.lingua_Latina {
 	font-size: 150%;
 	text-align: center;
 }
-.NavItem {
-    padding-right: 10px;
-    padding-left: 10px;
+.NavBlock a {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+.TableHeader {
+	font-style: bold;
 }
